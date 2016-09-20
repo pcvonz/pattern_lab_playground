@@ -6,11 +6,21 @@
 var gulp = require('gulp'),
   path = require('path'),
   browserSync = require('browser-sync').create(),
+  sass = require('gulp-sass'),
   argv = require('minimist')(process.argv.slice(2));
+
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
 ******************************************************/
+//SASS Compilation
+gulp.task('pl-sass', function() {
+  return gulp.src(path.resolve(paths().source.css, 'style.scss'))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(path.resolve(paths().source.css)));
+                                                          
+});
+
 // JS copy
 gulp.task('pl-copy:js', function(){
   return gulp.src('**/*.js', {cwd: path.resolve(paths().source.js)} )
@@ -85,7 +95,7 @@ gulp.task('pl-assets', gulp.series(
     'pl-copy:img',
     'pl-copy:favicon',
     'pl-copy:font',
-    'pl-copy:css',
+    gulp.series('pl-sass', 'pl-copy:css', function(done) {done();}),
     'pl-copy:styleguide',
     'pl-copy:styleguide-css'
   ),
@@ -145,6 +155,7 @@ function reloadCSS() {
 }
 
 function watch() {
+  gulp.watch(path.resolve(paths().source.css, '**/*.scss'), { awaitWriteFinish: true }).on('change', gulp.series('pl-sass', reloadCSS));
   gulp.watch(path.resolve(paths().source.css, '**/*.css'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:css', reloadCSS));
   gulp.watch(path.resolve(paths().source.styleguide, '**/*.*'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reloadCSS));
 
