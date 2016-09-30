@@ -72,5 +72,11 @@
     "short": "20"
   },
   "seconds": "31",
-  "button_text": "Click me"
+  "button_text": "Click me",
+  "main-header-image": {
+    "src":"../../images/main-header-image.jpg"
+  },
+  "page-header-image": {
+    "src":"../../images/page-header-image.jpg"
+  }
 }

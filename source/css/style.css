@@ -7,6 +7,26 @@ h1 {
 body {
   font: 1em "Open Sans"; }
 
-thead tr {
-  color: white;
-  background-color: #003f87; }
+.with-title {
+  border-spacing: 0px;
+  text-align: center;
+  width: 80%;
+  max-width: 800px; }
+  .with-title thead tr {
+    color: white;
+    font-weight: 600;
+    background-color: #003f87; }
+  .with-title thead td:last-child {
+    background-color: #BAD80A;
+    color: black; }
+  .with-title thead td {
+    padding: 5px 1px 5px 1px; }
+  .with-title tbody tr th {
+    font-weight: 400;
+    text-align: left;
+    padding: 5px;
+    border-bottom: .2px dashed  #cfcfcf; }
+  .with-title tbody tr td {
+    border-bottom: .2px dashed #cfcfcf; }
+  .with-title tbody thead td {
+    padding: 5px 10px; }

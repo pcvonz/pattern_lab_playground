@@ -1,4 +1,39 @@
-thead tr {
-    color: white;
-    background-color: $color-western-blue;
+.with-title {
+    thead {
+        tr  {
+            color: white;
+            font-weight: 600;
+            background-color: $color-western-blue;
+        }
+        td:last-child {
+            background-color: $color-light-green;
+            color: black;
+        }
+        td {
+            padding: 5px 1px 5px 1px;
+        }
+    }
+
+    tbody {
+
+        tr{
+            th {
+                font-weight: 400;
+                text-align: left;
+                padding: 5px;
+                border-bottom: .2px dashed  #cfcfcf;
+            }
+            td {
+                border-bottom: .2px dashed #cfcfcf;
+            }
+        }
+        thead td {
+            padding: 5px 10px;
+        }
+    }
+
+    border-spacing: 0px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
 }
