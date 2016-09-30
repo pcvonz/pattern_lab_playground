@@ -6,3 +6,7 @@ h1 {
 
 body {
   font: 1em "Open Sans"; }
+
+thead tr {
+  color: white;
+  background-color: #003f87; }
