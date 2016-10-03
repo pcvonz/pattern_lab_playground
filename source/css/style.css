@@ -4,6 +4,13 @@ h1 {
   border-bottom: 1px solid #aeaeae;
   font-weight: 400; }
 
+h2 {
+  color: #003f87; }
+
+h3 {
+  font-size: 1em;
+  font-weight: 800; }
+
 .font-secondary {
   font: 1em "Garamond"; }
 
