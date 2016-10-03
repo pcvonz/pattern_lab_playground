@@ -1,5 +1,8 @@
 h1 {
-  font-size: 5rem; }
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #aeaeae;
+  font-weight: 400; }
 
 .font-secondary {
   font: 1em "Garamond"; }
