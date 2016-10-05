@@ -40,3 +40,17 @@ body {
     border-bottom: .2px dashed #cfcfcf; }
   .with-title tbody thead td {
     padding: 5px 10px; }
+
+header .main-header-text {
+  background-color: #0083d6;
+  height: 5em;
+  position: relative;
+  top: -5.2em;
+  width: 1060px; }
+  header .main-header-text p {
+    color: white;
+    font-weight: 800;
+    text-align: right;
+    font-size: 2em;
+    vertical-align: center;
+    line-height: 2.5em; }
