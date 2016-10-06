@@ -1,0 +1,13 @@
+.nav {
+    background-color: $color-western-blue;
+    text-align: center;
+    list-style: none;
+    padding: .4em 1em;
+    float: left;
+    margin: .2em;
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+}
