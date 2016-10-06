@@ -41,16 +41,22 @@ body {
   .with-title tbody thead td {
     padding: 5px 10px; }
 
-header .main-header-text {
+.main-header-text {
   background-color: #0083d6;
   height: 5em;
   position: relative;
-  top: -5.2em;
   width: 1060px; }
-  header .main-header-text p {
+  .main-header-text p {
     color: white;
     font-weight: 800;
     text-align: right;
     font-size: 2em;
     vertical-align: center;
     line-height: 2.5em; }
+    .main-header-text p img {
+      vertical-align: middle;
+      height: 1.7em;
+      margin-right: .5em; }
+
+header .main-header-text {
+  top: -5.2em; }

@@ -1,18 +1,25 @@
-header {
-   .main-header-text {
-        background-color: $color-western-light-blue;
-        p {
-            color: white;
-            font-weight: 800;
-            text-align: right;
-            font-size: 2em;
-            vertical-align: center;
-            line-height: 2.5em;
+.main-header-text {
+    background-color: $color-western-light-blue;
+    p {
+        color: white;
+        font-weight: 800;
+        text-align: right;
+        font-size: 2em;
+        vertical-align: center;
+        line-height: 2.5em;
+        img {
+            vertical-align: middle;
+            height: 1.7em;
+            margin-right: .5em;
         }
-        height: 5em;
-        position: relative;
-        top: -5.2em;
-        width: 1060px;
     }
+    height: 5em;
+    position: relative;
+    width: 1060px;
+}
     
+header {
+    .main-header-text {
+        top: -5.2em;
+    }
 }
