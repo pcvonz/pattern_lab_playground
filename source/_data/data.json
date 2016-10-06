@@ -78,5 +78,6 @@
   },
   "page-header-image": {
     "src":"../../images/page-header-image.jpg"
-  }
+  },
+ "nav-item": "Home"
 }

@@ -60,3 +60,19 @@ body {
 
 header .main-header-text {
   top: -5.2em; }
+
+#selected {
+  background-color: #BAD80A;
+  font-weight: 600; }
+
+.nav {
+  background-color: #003f87;
+  text-align: center;
+  list-style: none;
+  padding: .4em 1em;
+  float: left;
+  margin: .2em; }
+  .nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; }
