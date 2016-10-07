@@ -3,8 +3,12 @@
 @import "scss/base/global";
 @import "scss/base/body";
 @import "scss/base/table";
+
+//layouts
+@import "scss/layouts/navbar";
+@import "scss/layouts/header";
+
+//modules
 @import "scss/modules/header-image-text.scss";
 @import "scss/modules/nav-button-selected";
 @import "scss/modules/nav-button";
-@import "scss/layouts/navbar";
-

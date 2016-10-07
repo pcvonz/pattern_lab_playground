@@ -79,5 +79,8 @@
   "page-header-image": {
     "src":"../../images/page-header-image.jpg"
   },
- "nav-item": "Home"
+ "nav-item": "Home",
+ "index": "A",
+ "quote": "Success is more try than cry."
+
 }

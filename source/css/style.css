@@ -41,8 +41,11 @@ body {
   .with-title tbody thead td {
     padding: 5px 10px; }
 
+header {
+  max-height: 350px; }
+
 .main-header-text {
-  background-color: #0083d6;
+  background-color: #545454;
   height: 5em;
   position: relative;
   width: 1060px; }
@@ -59,7 +62,7 @@ body {
       margin-right: .5em; }
 
 header .main-header-text {
-  top: -5.2em; }
+  top: -7.2em; }
 
 #selected {
   background-color: #BAD80A;
