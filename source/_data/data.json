@@ -79,6 +79,9 @@
   "page-header-image": {
     "src":"../../images/page-header-image.jpg"
   },
+  "dropdown": {
+      "title":"Staff Policies"
+  },
  "nav-item": "Home",
  "index": "A",
  "quote": "Success is more try than cry."
