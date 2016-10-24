@@ -1,15 +1,20 @@
+//susy
+@import "susy";
+
 @import "scss/abstracts/variables.scss";
 @import "scss/base/headers.scss";
 @import "scss/base/global";
 @import "scss/base/body";
-@import "scss/base/table";
+@import "scss/base/header";
 
 //layouts
 @import "scss/layouts/navbar";
-@import "scss/layouts/header";
 
 //modules
 @import "scss/modules/header-image-text.scss";
-@import "scss/modules/nav-button-selected";
 @import "scss/modules/nav-button";
 @import "scss/modules/dropdown";
+@import "scss/modules/table";
+
+//states
+@import "scss/states/nav-button-selected";

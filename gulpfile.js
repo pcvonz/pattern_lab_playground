@@ -13,10 +13,24 @@ var gulp = require('gulp'),
 /******************************************************
  * COPY TASKS - stream assets from source to destination
 ******************************************************/
+//Susy
+//gulp.task('sass', function() {
+//  return gulp.src('scss/*.scss')
+//      .pipe(sass({
+//          outputStyle: 'compressed',
+//          includePaths: ['node_modules/susy/sass']
+//      }).on('error', sass.logError))
+//      .pipe(gulp.dest('public/css'));
+//});
+
 //SASS Compilation
 gulp.task('pl-sass', function() {
-  return gulp.src(path.resolve(paths().source.css, 'style.scss'))
-    .pipe(sass().on('error', sass.logError))
+  return gulp.src(path.resolve(paths().source.css, '*.scss'))
+    .pipe(sass({
+          outputStyle: 'compressed',
+          includePaths: ['node_modules/susy/sass']
+    }).on('error', sass.logError))
+
     .pipe(gulp.dest(path.resolve(paths().source.css)));
                                                           
 });
