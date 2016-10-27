@@ -1,7 +1,11 @@
 //susy
 @import "susy";
 
+//Abstracts
+@import "scss/abstracts/susy_presets.scss";
 @import "scss/abstracts/variables.scss";
+
+//Base
 @import "scss/base/headers.scss";
 @import "scss/base/global";
 @import "scss/base/body";
@@ -15,6 +19,5 @@
 @import "scss/modules/nav-button";
 @import "scss/modules/dropdown";
 @import "scss/modules/table";
+@import "scss/modules/style-quote";
 
-//states
-@import "scss/states/nav-button-selected";
