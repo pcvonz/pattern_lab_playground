@@ -1,0 +1,12 @@
+header {
+    > img {
+        @include breakpoint($mobile) {
+            width: 100%;
+        }
+    }
+    @include breakpoint($mobile) {
+        .main-header-text {
+            width: 100%;
+        }
+    }
+}

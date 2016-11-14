@@ -4,14 +4,23 @@
     list-style: none;
     padding: .4em 1em;
     float: left;
-	@include span(1 of 12);
     a {
         text-decoration: none;
         text-transform: uppercase;
         color: white;
     }
+    @include breakpoint($mobile) {
+        width: 100%;
+
+    } 
 }
 
+@include breakpoint($mobile) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+} 
 
 #is-selected {
     background-color: $color-light-green;

@@ -1,5 +1,6 @@
 //susy
 @import "susy";
+@import "breakpoint";
 
 //Abstracts
 @import "scss/abstracts/susy_presets.scss";
@@ -13,6 +14,7 @@
 
 //layouts
 @import "scss/layouts/navbar";
+@import "scss/layouts/header";
 
 //modules
 @import "scss/modules/header-image-text.scss";

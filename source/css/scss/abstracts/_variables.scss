@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans');
+
 $color-western-blue: #003f87;
 $color-western-light-blue: #0083d6;
 $color-red: #cc2d30;
@@ -5,4 +7,9 @@ $color-yellow: #ffc61e;
 $color-light-green: #BAD80A;
 $color-dark-green: #006B3F;
 $primary-font: "Open Sans";
-$secondary-font: "Garamond";
+$secondary-font: "EB Garamond";
+
+
+//Responsive stuff
+
+$mobile: max-width 1078px;

@@ -28,7 +28,8 @@ gulp.task('pl-sass', function() {
   return gulp.src(path.resolve(paths().source.css, '*.scss'))
     .pipe(sass({
           outputStyle: 'compressed',
-          includePaths: ['node_modules/susy/sass']
+          includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets']
+
     }).on('error', sass.logError))
 
     .pipe(gulp.dest(path.resolve(paths().source.css)));
