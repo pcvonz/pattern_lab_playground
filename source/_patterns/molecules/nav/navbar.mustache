@@ -1,5 +1,6 @@
 <nav>
-    <ul>
+    {{> atoms-menu }}
+    <ul class="is-hidden-mobile">
         {{> atoms-nav-selected(nav-item: "Home") }}
         {{> atoms-nav(nav-item: "About") }}
         {{> atoms-nav(nav-item: "Current Residents") }}

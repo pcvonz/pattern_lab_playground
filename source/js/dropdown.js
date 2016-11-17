@@ -1,15 +1,15 @@
 window.onload = function(){
 
-    var e = document.getElementsByClassName("dropdown");
+    var e = document.getElementById("menu-button");
+    var nav = e.parentNode.nextElementSibling;
+    console.log(nav);
 
-    for(var i = 0; i < e.length; i++) {
-        e[i].addEventListener('click', function(event) {
-            if(event.target.nextElementSibling.className == ''){
-                event.target.nextElementSibling.className = 'close';
-            }
-            else {
-                event.target.nextElementSibling.className = '';
-            }
-        });
-    }
+    e.addEventListener('click', function(event) {
+        if(nav.className == 'is-hidden-mobile'){
+            nav.className = '';
+        }
+        else {
+            nav.className = "is-hidden-mobile";
+        }
+    });
 }
