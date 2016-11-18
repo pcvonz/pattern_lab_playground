@@ -14,34 +14,6 @@
     }
 }
 
-.is-hidden-mobile {
-    @include breakpoint($mobile) {
-        display: none;
-
-    } 
-}
-
-.menu-container {
-    background-color: $color-western-blue;
-    text-align: left;
-    list-style: none;
-    padding: .4em 1em;
-    float: left;
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-    }
-    width: 100%;
-    @include breakpoint($desktop) {
-        display: none;
-
-    } 
-}
-
-.menu-bar {
-    fill: white;
-}
 
 @include breakpoint($mobile) {
     nav ul {
