@@ -17,32 +17,6 @@ nav {
         opacity: 1;
         transition: bottom .5s, opacity .5s, visibility .5s, z-index .5s;
     }
-    li {
-        background-color: $color-western-blue;
-        text-align: center;
-        list-style: none;
-        padding: 0;
-        float: left;
-        white-space: nowrap;
-        padding: .4em 1em;
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
-        }
-        @include breakpoint($tablet) {
-            width: 50%;
-        }
-        @include breakpoint($desktop) {
-        }
-        @include breakpoint($mobile) {
-            width: 100%;
-        }
-    }
     li:last-child {
         @include breakpoint($tablet) {
             width: 100%;
@@ -50,6 +24,32 @@ nav {
     }
 }
 
+li {
+    background-color: $color-western-blue;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    float: left;
+    white-space: nowrap;
+    padding: .4em 1em;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+    @include breakpoint($tablet) {
+        width: 50%;
+    }
+    @include breakpoint($desktop) {
+    }
+    @include breakpoint($mobile) {
+        width: 100%;
+    }
+}
 
 #is-selected {
     background-color: $color-light-green;
