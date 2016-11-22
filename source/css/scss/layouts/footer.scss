@@ -1,0 +1,13 @@
+footer {
+    background-color: $color-western-blue;
+    max-width: 980px;
+    .footer {
+        width: 50%;
+        height: 180px;
+        float: left;
+    }
+    .footer:last-child {
+        text-align: right;
+    }
+    height: 180px;
+}

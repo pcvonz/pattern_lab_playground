@@ -74,13 +74,16 @@
   "seconds": "31",
   "button_text": "Click me",
   "main-header-image": {
-    "src":"../../images/main-header-image.jpg"
+    "src":"/images/main-header-image.jpg"
   },
   "page-header-image": {
-    "src":"../../images/page-header-image.jpg"
+    "src":"/images/page-header-image.jpg"
   },
   "dropdown": {
       "title":"Staff Policies"
+  },
+  "western_logo": {
+     "src":"/images/western_logo.png"
   },
  "nav-item": "Home",
  "index": "A",
