@@ -1,7 +1,0 @@
-.is-hidden-mobile {
-    @include breakpoint($tablet) {
-        display: none;
-
-    } 
-}
-

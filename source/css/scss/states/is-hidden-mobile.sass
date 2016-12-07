@@ -1,0 +1,11 @@
+.is-hidden-mobile
+  bottom: 150px
+  opacity: 0
+  z-index: -100
+  visibility: hidden
+
+  +breakpoint($desktop)
+    visibility: visible
+    opacity: 1
+    z-index: 1
+    bottom: 0px
