@@ -1,29 +1,20 @@
-//susy
+// Susy - our custom grid library
 @import susy
+
+// Breakpoint - custom media query mixins
 @import breakpoint
 
-//Abstracts
-@import sass/abstracts/susy_presets.sass
-@import sass/abstracts/variables
+// Abstracts - custom variables and mixins
+@import sass/abstracts
 
-//Base
-@import sass/base/headers
-@import sass/base/global
-@import sass/base/body
-@import sass/base/header
+// Base styles - all base HTML tags; no IDs or classes
+@import sass/base
 
-//layouts
-@import sass/layouts/navbar
-@import sass/layouts/header
-@import sass/layouts/footer
+// Layout styles - if it appears once on a page it's probably a layout
+@import sass/layouts
 
-//modules
-@import sass/modules/header-image-text
-@import sass/modules/nav-button
-@import sass/modules/dropdown
-@import sass/modules/table
-@import sass/modules/style-quote
-@import sass/modules/hamburger-menu
+// Module styles - resuable pieces of code; if it appears more than once
+@import sass/modules
 
-//states
-@import sass/states/is-hidden-mobile
+// State styles - states that are applied to a component like error, etc.
+@import sass/states
