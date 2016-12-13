@@ -1,8 +1,12 @@
 header
-  > img
-    width: 100%
-    min-height: 18em
-    max-width: 980px
+  display: block
+  +breakpoint($mobile)
+    height: 194px
+  +breakpoint($tablet)
+    height: 359px
+    max-height: 359px
+  +breakpoint($desktop)
+    height: 359px
 
   .main-header-text
     max-width: 980px

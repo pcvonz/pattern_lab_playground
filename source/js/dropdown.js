@@ -5,11 +5,11 @@ window.onload = function(){
     console.log(nav);
 
     e.addEventListener('click', function(event) {
-        if(nav.className == 'is-hidden-mobile'){
+        if(nav.className == 'is-expanded-vertical-dropdown'){
             nav.className = '';
         }
         else {
-            nav.className = "is-hidden-mobile";
+            nav.className = "is-expanded-vertical-dropdown";
         }
     });
 }
