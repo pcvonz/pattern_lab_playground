@@ -1,18 +1,24 @@
+//This needs to be torn apart into a layout module and separate modules
 .western-header
+  +container(100%)
+
   border-bottom: 6px solid $color-western-light-blue
-  vertical-align: middle
   line-height: 2em
+  text-transform: uppercase
   background-color: $color-western-blue
+  color: $color-western-light-blue
+
+  display: block
+  height: 100px 
+
   +breakpoint($desktop)
     background-color: white
-  display: block
-  width: 100%
-  text-transform: uppercase
-  height: 100px 
-  color: $color-western-light-blue
+
   .western-logo
     float: left
-    margin-left: 2em
+    +span(3)
+    margin-left: +span(1)
+    max-width: 249px 
     +breakpoint($tablet)
       width: 136px
       height: 94px
@@ -46,22 +52,8 @@
       display: inline-block
 
     li 
-      vertical-align: center
-      float: left
-      list-style: none
-      padding: 1em
       font-size: .7em
-        
 
     li:last-child
-      margin-right: 2em
+      margin-right: .2em
       
-  .search
-    background-image: url("../../images/search.png")
-    height: 48px
-    width: 48px
-    background-size: 48px
-    position: relative
-    left: 72em
-    top: 2em
-
