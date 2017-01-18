@@ -1,6 +1,6 @@
 //First of type makes the nav bar stand on it's own without header
 header:first-of-type + nav
-  margin-bottom: 6em
+  margin-bottom: 4em
   position: relative
   +breakpoint($tablet)
     bottom: 3.6em
@@ -9,3 +9,5 @@ header:first-of-type + nav
   +breakpoint($mobile)
     margin-bottom: 2em
     margin-left: -15px
+  +breakpoint($desktop)
+    margin: .5em

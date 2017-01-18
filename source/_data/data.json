@@ -88,6 +88,6 @@
  "nav-item": "Home",
  "index": "A",
  "quote": "Success is more try than cry.",
- "background": "test-background"
-
+ "background": "test-background",
+ "badge-background": "background-house"
 }
