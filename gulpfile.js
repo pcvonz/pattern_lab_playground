@@ -171,6 +171,7 @@ function reloadCSS() {
 
 function watch() {
   gulp.watch(path.resolve(paths().source.css, '**/*.sass'), { awaitWriteFinish: true }).on('change', gulp.series('pl-sass', reloadCSS));
+  gulp.watch(path.resolve(paths().source.js, '**/*.js'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:js', reload));
   gulp.watch(path.resolve(paths().source.css, '**/*.css'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:css', reloadCSS));
   gulp.watch(path.resolve(paths().source.styleguide, '**/*.*'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reloadCSS));
 
@@ -181,7 +182,7 @@ function watch() {
     path.resolve(paths().source.fonts + '/*'),
     path.resolve(paths().source.images + '/*'),
     path.resolve(paths().source.meta, '*'),
-    path.resolve(paths().source.annotations + '/*')
+    path.resolve(paths().source.annotations + '/*'),
   ].concat(getTemplateWatches());
 
   gulp.watch(patternWatches, { awaitWriteFinish: true }).on('change', gulp.series(build, reload));
