@@ -1,28 +1,10 @@
 nav
-  ul
-    width: 100vw
-    padding: 0
-    margin: 0
-    display: block
-    //Below is stuff used for the drop down menu
-    max-height: 300px
-    overflow: hidden
-    transition: max-height .5s, overflow .5s
-
-  +breakpoint($desktop)
-    margin: 1em 2em 8em 4em
-
-  li:last-child
-    +breakpoint($tablet)
-      width: 100%
+  background-color: $color-western-blue
 
 li.main-nav
   background-color: $color-western-blue
   text-align: center
-
-  ul
-    margin: 0
-    padding: 0
+  width: percentage(1/7)
 
   a
     text-decoration: none
@@ -38,5 +20,3 @@ li.main-nav
 li.main-nav:hover
   background-color: $color-western-light-blue
   color: white
-
-
