@@ -2,6 +2,13 @@
 //Check susy_presets in abstract
 .l-container
   +breakpoint($desktop)
-    +container(12)
+    +container(12 center)
   +breakpoint($tablet)
     +container(12)
+
+  p
+    +span(8 of 12)
+    +push(2)
+    +breakpoint($desktop)
+      +span(6 of 12)
+      +push(3)
