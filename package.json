@@ -32,5 +32,9 @@
   "license": "MIT",
   "engines": {
     "node": ">=5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "gulp-postcss": "^6.3.0"
   }
 }

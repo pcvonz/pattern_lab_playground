@@ -8,7 +8,8 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   sass = require('gulp-sass'),
   argv = require('minimist')(process.argv.slice(2));
-
+  postcss = require('gulp-postcss');
+  autoprefixer = require('autoprefixer');
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
@@ -31,7 +32,7 @@ gulp.task('pl-sass', function() {
           includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets']
 
     }).on('error', sass.logError))
-
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(gulp.dest(path.resolve(paths().source.css)));
 
 });

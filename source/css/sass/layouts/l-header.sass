@@ -1,49 +1,33 @@
 header
-  margin-bottom: 9em
   height: 90%
   +breakpoint($mobile)
     height: 194px
-    +span(12 of 12)
-    +push(12 of 12)
+    width: 100%
   +breakpoint($tablet)
-    height: 359px
-    max-height: 359px
-    +span(8 of 12)
-    +push(2 of 12)
+    height: 400px
+    width: 100%
   +breakpoint($desktop)
+    margin-bottom: 2em 
     +span(8 of 12)
     +push(2 of 12)
-    height: 500px 
+    height: 400px 
   clear: both
 
-.l-nav
-  float: left
-  padding: .4em 1em
-  list-style: none
-  white-space: nowrap
 
 //First of type makes the nav bar stand on it's own without header
 nav
-  +breakpoint($desktop)
-    width: 100%
-  display: inline-block
-
+  clear: both
   ul
-    width: 100%
-    padding: 0
-    margin: 0
+    margin: 0 auto 
+    width: fit-content
     //Below is stuff used for the drop down menu
-    max-height: 300px
-    overflow: hidden
-    transition: max-height .5s, overflow .5s
-
-  +breakpoint($desktop)
-    //margin: 1em 2em 8em 4em
 
   li:last-child
     +breakpoint($tablet)
       //width: 100%
 
+.social-media-links
+  padding-top: 2em
 
 
 //header:first-of-type + nav
