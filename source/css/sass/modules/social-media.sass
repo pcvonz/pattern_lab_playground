@@ -1,8 +1,15 @@
 .social-media-links
-  float: right
+  text-align: right
+  z-index: 100
   margin-left: 1em
   position: relative
-  top: 2.4em
+  top: 2.45em
+  left: 50vw
+  +breakpoint($tablet)
+    left: 75vw
+  +breakpoint($desktop)
+    top: 4em
+    left: 90vw
   display: inline
   img
     height: 36px
