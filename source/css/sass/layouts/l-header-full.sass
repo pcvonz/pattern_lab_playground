@@ -1,0 +1,24 @@
+.l-header-full
+  .header-image-full
+    #notice-text
+      display: block
+      width: 100%
+      position: relative
+      top: 20em
+    +breakpoint($desktop)
+      #notice-text 
+        display: inline
+        position: relative
+        top: 15em
+        left: 60%
+  nav
+    div
+      position: relative
+      bottom: 4.6em
+      +breakpoint($desktop)
+        bottom: 0
+    ul
+      position: relative
+      bottom: 4.6em
+      +breakpoint($desktop)
+        bottom: 0

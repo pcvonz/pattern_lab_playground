@@ -1,20 +1,26 @@
 .l-header
   +container(12)
 
-header
-  height: 90%
-  +breakpoint($mobile)
-    height: 194px
-    width: 100%
-  +breakpoint($tablet)
-    height: 400px
-    width: 100%
-  +breakpoint($desktop)
-    margin-bottom: 2em 
-    +span(8 of 12)
-    +push(2 of 12)
-    height: 400px 
-  clear: both
+.l-header
+  header
+    height: 90%
+    +breakpoint($mobile)
+      height: 194px
+      width: 100%
+    +breakpoint($tablet)
+      height: 400px
+      width: 100%
+    +breakpoint($desktop)
+      margin-bottom: 2em 
+      +span(8 of 12)
+      +push(2 of 12)
+      height: 400px 
+    clear: both
+  .social-media-links
+    text-align: right
+    +breakpoint($desktop)
+      margin-right: 16.954%
+
 
 
 //First of type makes the nav bar stand on it's own without header
@@ -33,10 +39,6 @@ nav
     +breakpoint($tablet)
       //width: 100%
 
-.social-media-links
-  text-align: right
-  +breakpoint($desktop)
-    margin-right: 16.954%
   
   
   padding-top: 2em
