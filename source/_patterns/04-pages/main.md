@@ -1,9 +1,10 @@
-# Main page
+---
+title: Main Page
+---
 
-The main page of the housing website. The old website included:
+## ToDo:
 
-- Important dates 
-- Social Media links
+- Add important dates 
 - Links to other forms of contact
 - Top Picks
 - Links to apply for housing, and my housing
