@@ -1,7 +1,7 @@
-//This needs to be torn apart into a layout module and separate modules
+//Separated some stuff into a layout, but should probably 
+//have a meeting about what defines layout stuff 
+//and what defines module stuff
 .western-header
-  +container(100%)
-
   border-bottom: 6px solid $color-western-light-blue
   line-height: 2em
   text-transform: uppercase
@@ -13,21 +13,6 @@
 
   +breakpoint($desktop)
     background-color: white
-
-  .western-logo
-    float: left
-    +span(3)
-    margin-left: +span(1)
-    max-width: 249px 
-    +breakpoint($tablet)
-      width: 136px
-      height: 94px
-      background-size: 139px
-    +breakpoint($mobile)
-      width: 136px
-      height: 94px
-      background-size: 139px
-      margin-left: .2em
   p 
     display: inline-block
     font-size: 1.4em
@@ -46,7 +31,6 @@
       font-size: 1em
       line-height: 5em
   ul
-    float: right
     display: none
     list-style: none
     +breakpoint($desktop)
@@ -57,6 +41,4 @@
       a
         color: $color-western-light-blue
 
-    li:last-child
-      margin-right: .2em
       

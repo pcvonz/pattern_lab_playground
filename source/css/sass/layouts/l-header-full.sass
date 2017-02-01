@@ -10,9 +10,19 @@
         display: inline
         position: relative
         top: 15em
-        left: 60%
+        left: 52%
   nav
     position: relative
     bottom: 4.6em
     +breakpoint($desktop)
       bottom: 0
+      padding: 0
+    .social-media-links
+      position: relative
+      top: 2.45em
+      left: 50vw
+      +breakpoint($tablet)
+        left: 75vw
+      +breakpoint($desktop)
+        top: 4em
+        left: 90vw

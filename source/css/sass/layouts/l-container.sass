@@ -1,7 +1,6 @@
 //Everything is centered because the column width is set to the same size as the header (980px).
 //Check susy_presets in abstract
 .l-container
-  z-index: -100
   position: relative
   bottom: 5.6em
   +container(12 center)
@@ -10,10 +9,12 @@
   +breakpoint($desktop)
     +container(12 center)
     bottom: 0
-
   p
     +span(10 of 12)
     +push(1)
     +breakpoint($desktop)
       +span(6 of 12)
       +push(3)
+  .important-dates
+    +push(4)
+    +span(4 of 12)

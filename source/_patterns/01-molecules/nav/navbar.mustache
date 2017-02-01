@@ -2,9 +2,9 @@
 {{> molecules-social-media }}  
     {{> atoms-menu }}
     <ul class="is-expanded-vertical-dropdown">
-        {{> atoms-nav-selected(classes: "main-nav", nav-item: "Home") }}
+        {{> atoms-nav(ids: "is-selected", classes: "main-nav", nav-item: "Home", href: "{{ link.pages-main }}") }}
         {{> atoms-nav(classes: "main-nav", nav-item: "About") }}
-        {{> atoms-nav(classes: "main-nav", nav-item: "Current Residents") }}
+        {{> atoms-nav(classes: "main-nav", nav-item: "Current Residents", href: "{{ link.pages-content }}") }}
         {{> atoms-nav(classes: "main-nav", nav-item: "Future Residents") }}
         {{> atoms-nav(classes: "main-nav", nav-item: "Guest Housing") }}
         {{> atoms-nav(classes: "main-nav", nav-item: "Jobs") }}
