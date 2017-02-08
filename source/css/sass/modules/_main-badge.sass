@@ -2,8 +2,14 @@
   border-radius: 100%
   
   background-color: $color-western-light-blue
-  width: 20vw
-  height: 20vw
+  width: 40vw
+  height: 40vw
+  +breakpoint($tablet)
+    width: 20vw
+    height: 20vw
+  +breakpoint($desktop)
+    width: 20vw
+    height: 20vw
   max-width: 200px
   max-height: 200px
   background-repeat: no-repeat
@@ -14,22 +20,38 @@
   background-image: url("../../images/house.svg")
   background-position: center center
   background-size: 60%
+  +breakpoint($tablet)
+    background-size: 60%
+  +breakpoint($desktop)
+    background-size: 60%
 
 .badge-background
   clear: both
   border-bottom: 5px solid $color-western-light-blue
   border-top: 5px solid $color-western-light-blue
   background-color: $color-western-blue
-  height: 40vw
-  max-height: 25em
+  height: 180vw
+  +breakpoint($tablet)
+    height: 50vw
+  +breakpoint($desktop)
+    height: 40vw
+    max-height: 23em;
 
-.col1, .col2, .col3
+.col-3, .col-3-last
   p
     text-align: center
     color: white
     font-weight: 800
     //
-    font-size: 3vw
+    font-size: 1em
     white-space: nowrap
+    +breakpoint($tablet)
+      font-size: 1.5em
+    +breakpoint($desktop)
+      font-size: 2em
   position: relative
-  top: 21%
+  top: 5%
+  +breakpoint($tablet)
+    top: 21%
+  +breakpoint($desktop)
+    top: 21%

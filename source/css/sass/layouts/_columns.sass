@@ -1,6 +1,12 @@
-.col1
-  +span(4)
-.col2
-  +span(4 at 4)
-.col3
-  +span(4 of 12 last)
+.col-3
+  +span(12 of 12)
+  +breakpoint($tablet)
+    +span(4 of 12)
+  +breakpoint($desktop)
+    +span(4 of 12)
+.col-3-last
+  +span(12 of 12)
+  +breakpoint($tablet)
+    +span(4 of 12 last)
+  +breakpoint($desktop)
+    +span(4 of 12 last)

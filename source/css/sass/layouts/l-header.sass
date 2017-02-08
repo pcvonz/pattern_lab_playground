@@ -25,6 +25,8 @@
 
 //First of type makes the nav bar stand on it's own without header
 nav
+  /* z-index set to draw under the nav */
+  z-index: 1
   clear: both
   ul
     //for some reason 0 padding makes the dropdown disappear??
@@ -38,7 +40,11 @@ nav
   li:last-child
     +breakpoint($tablet)
       //width: 100%
-
+  #main-search
+    display: inline
+    list-style: none
+    background-color: $color-western-blue
+    height: 100%
   
   
   padding-top: 2em

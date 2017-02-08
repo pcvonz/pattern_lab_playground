@@ -89,5 +89,6 @@
  "index": "A",
  "quote": "Success is more try than cry.",
  "background": "test-background",
- "badge-background": "background-house"
+ "badge-background": "background-house",
+  "icon": "magnifying-glass"
 }
