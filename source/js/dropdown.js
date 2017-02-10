@@ -1,6 +1,12 @@
 window.onload = function(){
+   'use strict';
 
-    var e = document.getElementById("menu-button");
+    var e = document.getElementById("menu-button"),
+        openCtrl = document.getElementById('btn-search-close'),
+        closeCtrl = document.getElementById('btn-search-close'),
+        searchContainer = document.querySelector('.search'),
+        inputSearch = searchContainer.querySelector('.search__input');
+
     var nav = e.parentNode.nextElementSibling;
     console.log(nav);
 

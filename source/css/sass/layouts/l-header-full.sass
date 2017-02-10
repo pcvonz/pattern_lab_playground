@@ -14,6 +14,18 @@
   nav
     position: relative
     bottom: 4.6em
+    .search-wrap
+      position: relative
+      top: .1em
+      background-color: $color-western-blue;
+      height: 2em
+      display: inline-block
+      .search
+        color: transparentize(white, 1)
+      .search:focus
+        color: transparentize(white, 0)
+      .icon
+        z-index: 1
     +breakpoint($desktop)
       bottom: 0
       padding: 0

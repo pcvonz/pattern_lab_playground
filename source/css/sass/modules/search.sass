@@ -1,9 +1,23 @@
-.search
-  background-image: url("../../images/search.png")
-  height: 48px
-  width: 48px
-  background-size: 48px
-  position: relative
-  left: 72em
-  top: 2em
+.search-wrap
+  .search
+    width: 3em
+    border-top: none
+    border-right: none
+    border-left: none
+    background-color: transparent
+    transition: width .2s, color .2s
+    size: 100%
+    color: transparentize($font-color, 1)
+    position: relative
+    z-index: 2
+  .search:focus
+    width: 15em
+    color: $font-color
+  .icon
+    z-index: -1
+    position: relative
+    top: .2em
+    right: 2em
+    height: 1em
+    fill: white
 

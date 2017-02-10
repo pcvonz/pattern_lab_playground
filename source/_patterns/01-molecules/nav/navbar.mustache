@@ -1,6 +1,6 @@
 <nav class="navbar">
 {{> molecules-social-media }}  
-    {{> atoms-menu }}
+    <div class="menu-container">{{> atoms-menu(id:"menu-button") }}</div>
     <ul class="is-expanded-vertical-dropdown">
         {{> atoms-nav(ids: "is-selected", classes: "main-nav", nav-item: "Home", href: "{{ link.pages-main }}") }}
         {{> atoms-nav(classes: "main-nav", nav-item: "About") }}
