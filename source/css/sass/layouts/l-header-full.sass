@@ -13,28 +13,30 @@
         left: 52%
   nav
     position: relative
-    bottom: 4.6em
+    bottom: 2em
     .search-wrap
       position: relative
-      top: .1em
-      background-color: $color-western-blue;
-      height: 2em
+      background: linear-gradient(to bottom, #2989d8 0%,#003f87 8%,#003f87 94%,#0083d6 99%);
+      height: 2.1em
       display: inline-block
       .search
+        top: -.1em
         color: transparentize(white, 1)
       .search:focus
         color: transparentize(white, 0)
       .icon
+        top: -.1em
         z-index: 1
     +breakpoint($desktop)
       bottom: 0
       padding: 0
     .social-media-links
-      position: relative
-      top: 2.45em
-      left: 50vw
-      +breakpoint($tablet)
-        left: 75vw
+      position: absolute 
+      right: 0
+      padding-right: 2em
       +breakpoint($desktop)
-        top: 4em
+        padding-right: 0
+        margin-left: 0
+        position: relative
+        top: .6em
         left: 90vw

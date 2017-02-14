@@ -1,15 +1,23 @@
 .search-wrap
+  width: 100%
+  text-align: center
+  position: relative
+  left: 1em
+  +breakpoint($tablet)
+    width: 50%
+  +breakpoint($desktop)
+    width: unset
+    left: unset
   .search
     width: 3em
-    border-top: none
-    border-right: none
-    border-left: none
+    border: none
     background-color: transparent
     transition: width .2s, color .2s
     size: 100%
     color: transparentize($font-color, 1)
     position: relative
     z-index: 2
+    font: 18px "open sans"
   .search:focus
     width: 15em
     color: $font-color

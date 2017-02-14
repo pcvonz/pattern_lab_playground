@@ -10,19 +10,31 @@ var gulp = require('gulp'),
   argv = require('minimist')(process.argv.slice(2));
   postcss = require('gulp-postcss');
   autoprefixer = require('autoprefixer');
+  svgSprite = require('gulp-svg-sprite');
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
 ******************************************************/
-//Susy
-//gulp.task('sass', function() {
-//  return gulp.src('scss/*.scss')
-//      .pipe(sass({
-//          outputStyle: 'compressed',
-//          includePaths: ['node_modules/susy/sass']
-//      }).on('error', sass.logError))
-//      .pipe(gulp.dest('public/css'));
-//});
+config = {
+  shape: {
+    dimension: {         // Set maximum dimensions
+      maxWidth: 32,
+      maxHeight: 32
+    },
+    spacing: {         // Add padding
+     //   padding     : 10
+    },
+    //dest            : 'out/intermediate-svg'    // Keep the intermediate files
+  },
+  mode: {
+    symbol: true      // Activate the «symbol» mode
+  }
+};
+gulp.task('svg', function(done) {
+  return gulp.src(path.resolve('source/images/*.svg'))
+                              .pipe(svgSprite(config))
+                              .pipe(gulp.dest('templates'));
+});
 
 //SASS Compilation
 gulp.task('pl-sass', function() {
