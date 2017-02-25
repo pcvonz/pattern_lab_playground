@@ -11,6 +11,7 @@ var gulp = require('gulp'),
   postcss = require('gulp-postcss');
   autoprefixer = require('autoprefixer');
   svgSprite = require('gulp-svg-sprite');
+  concat = require('gulp-concat');
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
@@ -41,8 +42,7 @@ gulp.task('pl-sass', function() {
   return gulp.src(path.resolve(paths().source.css, '*.sass'))
     .pipe(sass({
           outputStyle: 'compressed',
-          includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets']
-
+          includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets', 'node_modules/normalize-scss/sass']
     }).on('error', sass.logError))
     .pipe(postcss([ autoprefixer() ]))
     .pipe(gulp.dest(path.resolve(paths().source.css)));
