@@ -22,7 +22,6 @@ window.onload = function(){
 
       $(selected).data("transition", "no");
       selected.className  = "thumbnail thumbnail-selected";
-      console.log(selected);
   };
 
   function getRandomInt(min, max) {
@@ -32,5 +31,5 @@ window.onload = function(){
   }
 
 
-  setTimeout(function() {select_random()}, 1000);
+  setTimeout(function() {select_random()}, 100);
 }
