@@ -7,11 +7,14 @@ var gulp = require('gulp'),
   path = require('path'),
   browserSync = require('browser-sync').create(),
   sass = require('gulp-sass'),
-  argv = require('minimist')(process.argv.slice(2));
-  postcss = require('gulp-postcss');
-  autoprefixer = require('autoprefixer');
-  svgSprite = require('gulp-svg-sprite');
-  concat = require('gulp-concat');
+  argv = require('minimist')(process.argv.slice(2)),
+  postcss = require('gulp-postcss'),
+  autoprefixer = require('autoprefixer'),
+  svgSprite = require('gulp-svg-sprite'),
+  concat = require('gulp-concat'),
+  exec = require('child_process').execSync;
+
+var user_config = require('./user.config'),
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
@@ -104,6 +107,7 @@ gulp.task('pl-copy:styleguide-css', function(){
 //read all paths from our namespaced config file
 var config = require('./patternlab-config.json'),
   patternlab = require('patternlab-node')(config);
+
 
 function paths() {
   return config.paths;
@@ -202,9 +206,14 @@ function watch() {
 }
 
 gulp.task('patternlab:connect', gulp.series(function(done) {
+  //For Paul
+  var browse = "google-chrome";
+  if (exec("whoami").toString() == "vonzimp\n") {
+      browse = "firefox";
+  }
   browserSync.init({
+    browser: browse,
     port: 8080,
-    browser: "firefox",
     server: {
       baseDir: path.resolve(paths().public.root)
     },

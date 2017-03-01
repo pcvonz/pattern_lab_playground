@@ -1,12 +1,12 @@
 "use strict"
 window.onload = function(){
-  var elements = document.getElementsByClassName("thumbnail-blue");
+  var elements = document.getElementsByClassName("thumbnail-blue-transition");
 
   for (var i = 0; i < elements.length; i++) {
       $(elements[i]).data('transition', 'yes');
       elements[i].addEventListener( 'transitionend',
               function(event) {
-                 elements = document.getElementsByClassName("thumbnail-blue");
+                 elements = document.getElementsByClassName("thumbnail-blue-transition");
                  setTimeout(function(){
                    select_random()}, 100);
               }, false);
