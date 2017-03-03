@@ -14,8 +14,6 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   exec = require('child_process').execSync;
 
-var user_config = require('./user.config'),
-
 /******************************************************
  * COPY TASKS - stream assets from source to destination
 ******************************************************/
