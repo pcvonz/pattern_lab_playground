@@ -10,7 +10,6 @@ var gulp = require('gulp'),
   argv = require('minimist')(process.argv.slice(2)),
   postcss = require('gulp-postcss'),
   autoprefixer = require('autoprefixer'),
-  svgSprite = require('gulp-svg-sprite'),
   concat = require('gulp-concat'),
   exec = require('child_process').execSync;
 
@@ -34,7 +33,7 @@ config = {
 };
 gulp.task('svg', function(done) {
   return gulp.src(path.resolve('source/images/*.svg'))
-                              .pipe(svgSprite(config))
+                              //.pipe(svgSprite(config))
                               .pipe(gulp.dest('templates'));
 });
 
@@ -207,6 +206,9 @@ gulp.task('patternlab:connect', gulp.series(function(done) {
   //For Paul
   var browse = "google-chrome";
   if (exec("whoami").toString() == "vonzimp\n") {
+      browse = "firefox";
+  }
+  if (exec("whoami").toString() == "paul\n") {
       browse = "firefox";
   }
   browserSync.init({
