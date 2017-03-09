@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1488761684544,
+  "timestamp": 1489099763044,
   "graph": {
     "options": {
       "directed": true,
@@ -20,6 +20,14 @@
         "v": "00-atoms/form-elements/checkbox.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/form-elements/password.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-forms-login/01-molecules-forms-login.rendered.html",
+          "lineagePattern": "molecules-login"
         }
       },
       {
@@ -77,6 +85,12 @@
         }
       },
       {
+        "v": "00-atoms/global/restek-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "00-atoms/icons/magnifying-glass.mustache",
         "value": {
           "compileState": "clean",
@@ -90,6 +104,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-nav-navbar/01-molecules-nav-navbar.rendered.html",
           "lineagePattern": "molecules-navbar"
+        }
+      },
+      {
+        "v": "00-atoms/icons/warning.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-image-blocks-warning/01-molecules-image-blocks-warning.rendered.html",
+          "lineagePattern": "molecules-warning"
         }
       },
       {
@@ -121,11 +143,33 @@
         }
       },
       {
+        "v": "00-atoms/images/restek-logo.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-login/03-templates-login.rendered.html",
+          "lineagePattern": "templates-login"
+        }
+      },
+      {
         "v": "00-atoms/images/thumbnail.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-globals-grid-header/02-organisms-globals-grid-header.rendered.html",
           "lineagePattern": "organisms-grid-header"
+        }
+      },
+      {
+        "v": "00-atoms/images/well.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/images/western-logo-white.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-login/03-templates-login.rendered.html",
+          "lineagePattern": "templates-login"
         }
       },
       {
@@ -231,9 +275,23 @@
         }
       },
       {
+        "v": "00-atoms/text/well.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "01-molecules/forms/comment-on-this-page.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/forms/login.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-login/03-templates-login.rendered.html",
+          "lineagePattern": "templates-login"
         }
       },
       {
@@ -274,6 +332,20 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-nav-navbar/01-molecules-nav-navbar.rendered.html",
           "lineagePattern": "molecules-navbar"
+        }
+      },
+      {
+        "v": "01-molecules/image-blocks/warning-block.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/image-blocks/warning.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-login/03-templates-login.rendered.html",
+          "lineagePattern": "templates-login"
         }
       },
       {
@@ -337,6 +409,12 @@
         }
       },
       {
+        "v": "03-templates/login.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "03-templates/main.mustache",
         "value": {
           "compileState": "clean",
@@ -363,13 +441,13 @@
         }
       },
       {
-        "v": "/Users/vonzimp/pattern_lab_playground/source/_meta/_00-head.mustache",
+        "v": "/home/vonzimp/pattern_lab_playground/source/_meta/_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "/Users/vonzimp/pattern_lab_playground/source/_meta/_01-foot.mustache",
+        "v": "/home/vonzimp/pattern_lab_playground/source/_meta/_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -384,6 +462,21 @@
       {
         "v": "01-molecules/forms/comment-on-this-page.mustache",
         "w": "00-atoms/form-elements/textarea.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/forms/login.mustache",
+        "w": "00-atoms/form-elements/text-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/forms/login.mustache",
+        "w": "00-atoms/form-elements/password.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/forms/login.mustache",
+        "w": "00-atoms/form-elements/button.mustache",
         "value": {}
       },
       {
@@ -424,6 +517,16 @@
       {
         "v": "01-molecules/image-blocks/social-media.mustache",
         "w": "00-atoms/social-media/twitter.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/image-blocks/warning-block.mustache",
+        "w": "00-atoms/icons/warning.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/image-blocks/warning.mustache",
+        "w": "00-atoms/icons/warning.mustache",
         "value": {}
       },
       {
@@ -509,6 +612,26 @@
       {
         "v": "03-templates/content.mustache",
         "w": "02-organisms/globals/footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/login.mustache",
+        "w": "01-molecules/image-blocks/warning.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/login.mustache",
+        "w": "01-molecules/forms/login.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/login.mustache",
+        "w": "00-atoms/images/restek-logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/login.mustache",
+        "w": "00-atoms/images/western-logo-white.mustache",
         "value": {}
       },
       {
