@@ -10,6 +10,7 @@
     "gulp-svg-sprite": "^1.3.6",
     "minimist": "^1.2.0",
     "patternlab-node": "^2.0.0",
+    "plugin-node-tab": "^2.0.2",
     "styleguidekit-assets-default": "^3.0.0",
     "styleguidekit-mustache-default": "^3.0.0",
     "susy": "^2.2.12"

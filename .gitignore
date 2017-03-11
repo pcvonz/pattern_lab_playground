@@ -9,3 +9,5 @@ public
 *.swp
 *.sw*
 source/css/style.css
+frontend/dist/
+frontend/bower_components
